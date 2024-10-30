@@ -51,12 +51,18 @@
 
 .player__controls {
 	display: flex;
-	gap: 15px;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 20px;
 }
 
 .controls__button {
-	font-size: 1.5rem;
-	cursor: pointer;
-	background: none;
+	background-color: transparent;
 	border: none;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.controls__button:hover {
+	transform: scale(1.1);
 }
