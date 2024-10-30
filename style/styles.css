@@ -68,3 +68,29 @@
 .controls__button:hover {
 	transform: scale(1.1);
 }
+
+@media (max-width: 1000px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.album-cover__image {
+		max-width: 200px;
+	}
+
+	.track-info__title {
+		font-size: 1.2rem;
+	}
+	.track-info__artist {
+		font-size: 1rem;
+	}
+
+	.player__progress {
+		max-width: 100%;
+	}
+	.controls__button {
+		gap: 0.5rem;
+	}
+}
