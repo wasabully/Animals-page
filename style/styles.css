@@ -1,13 +1,62 @@
-body {
-	font-family: 'Playwrite GB S', cursive;
-	font-optical-sizing: auto;
-	font-weight: 300;
-	font-style: normal;
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: cornflowerblue;
+	/* background-color: cornflowerblue; */
+	padding: 20px;
+	font-family: 'Playwrite GB S', cursive;
+}
+
+.player__album-cover {
+	margin-bottom: 20px;
+}
+
+.album-cover__image {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 10px;
+}
+
+.player__track-info {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.track-info__title {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.track-info__artist {
+	font-size: 1.2rem;
+	color: #555;
+}
+
+.player__progress {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 500px;
+}
+
+.progress__time {
+	font-size: 0.9rem;
+}
+
+.progress__bar {
+	flex-grow: 1;
+}
+
+.player__controls {
+	display: flex;
+	gap: 15px;
+}
+
+.controls__button {
+	font-size: 1.5rem;
+	cursor: pointer;
+	background: none;
+	border: none;
 }

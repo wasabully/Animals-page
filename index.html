@@ -14,28 +14,32 @@
 	</head>
 	<body>
 		<main class="container">
-			<section>
-				<img src="/img/img-LoveTheWayYouLie.jpeg" alt="Album" />
+			<section class="player__album-cover">
+				<img
+					src="/img/img-LoveTheWayYouLie.jpeg"
+					alt="Album"
+					class="album-cover__image"
+				/>
 			</section>
 
-			<section>
-				<h3>Trek</h3>
-				<p>Исполнитель</p>
+			<section class="player__track-info">
+				<h3 class="track-info__title">Trek</h3>
+				<p class="track-info__artist">Исполнитель</p>
 			</section>
 
-			<section>
-				<span>0:00</span>
-				<input type="range" min="0" max="100" value="0" />
-				<span>0:00</span>
+			<section class="player__progress">
+				<span class="progress__time progress__time--start">0:00</span>
+				<input type="range" class="progress__bar" min="0" max="100" value="0" />
+				<span class="progress__time progress__time--end">0:00</span>
 			</section>
 
-			<section>
-				<button>&#9664;&#9664;</button>
-				<button>&#9654;</button>
-				<button>&#9654;&#9654;</button>
+			<section class="player__controls">
+				<button class="controls__button">&#9664;&#9664;</button>
+				<button class="controls__button">&#9654;</button>
+				<button class="controls__button">&#9654;&#9654;</button>
 			</section>
 
-			<audio>
+			<audio class="player__audio">
 				<source
 					src="/muzic/Eminem, Rihanna – Love The Way You Lie.mp3"
 					type="audio/mpeg"
