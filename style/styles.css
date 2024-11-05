@@ -154,11 +154,11 @@ body {
 	}
 
 	.container {
-		height: 400px;
+		height: 500px;
 	}
 
 	.controls {
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	.controls button {
