@@ -1,5 +1,10 @@
-const audio = document.querySelector('.player__audio');
+const audio = document.getElementById('player');
 const playButton = document.getElementById('play-button');
+const prevButton = document.getElementById('prev-button');
+const nextButton = document.getElementById('next-button');
+const albumCover = document.getElementById('album-cover');
+const trackTitle = document.getElementById('track-title');
+const trackArtist = document.getElementById('track-artist');
 
 const tracks = [
 	{
@@ -16,7 +21,18 @@ const tracks = [
 	},
 ];
 
-function playPauseTrack() {
+let currentTrackIndex = 0;
+
+const loadTrack = () => {
+	const track = tracks[currentTrackIndex];
+	trackTitle.textContent = track.title;
+	trackArtist.textContent = track.artist;
+	albumCover.src = track.img;
+	audio.querySelector('source').src = track.src;
+	audio.load();
+};
+
+const playPauseTrack = () => {
 	if (audio.paused) {
 		audio.play();
 		playButton.innerHTML = '&#10074;&#10074;';
@@ -24,6 +40,16 @@ function playPauseTrack() {
 		audio.pause();
 		playButton.innerHTML = '&#9654;';
 	}
-}
+};
+
+const nextTrack = () => {
+	currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+	loadTrack();
+	audio.play();
+	playButton.innerHTML = '&#10074;&#10074;';
+};
 
 playButton.addEventListener('click', playPauseTrack);
+nextButton.addEventListener('click', nextTrack);
+
+loadTrack();

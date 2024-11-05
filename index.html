@@ -19,18 +19,23 @@
 					src="/img/img-LoveTheWayYouLie.jpeg"
 					alt="Album"
 					class="album-cover__image"
+					id="album-cover"
 				/>
 			</section>
 
 			<section class="player__track-info">
-				<h3 class="track-info__title">Love The Way You Lie</h3>
-				<p class="track-info__artist">Eminem - Rihanna</p>
+				<h3 id="track-title" class="track-info__title">Love The Way You Lie</h3>
+				<p id="track-artist" class="track-info__artist">Eminem - Rihanna</p>
 			</section>
 
 			<section class="player__controls">
-				<button class="controls__button">&#9664;&#9664;</button>
+				<button id="prev-button" class="controls__button">
+					&#9664;&#9664;
+				</button>
 				<button id="play-button" class="controls__button">&#9654;</button>
-				<button class="controls__button">&#9654;&#9654;</button>
+				<button id="next-button" class="controls__button">
+					&#9654;&#9654;
+				</button>
 			</section>
 
 			<section class="player__progress">
@@ -39,7 +44,7 @@
 				<span class="progress__time progress__time--end">0:00</span>
 			</section>
 
-			<audio class="player__audio">
+			<audio id="player" class="player__audio">
 				<source
 					src="/music/Eminem, Rihanna – Love The Way You Lie.mp3"
 					type="audio/mpeg"
