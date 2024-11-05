@@ -1,9 +1,10 @@
-# Music-player
+# Music Player
 
-Этот проект представляет собой аудиоплеер.
+This project is an audio player.
 
-## Ссылка на проект
+## Project Link
 
-Вы можете просмотреть проект по следующей ссылке:
+You can view the project at the following link:
 
-[Запустить аудиоплеер](https://wasabully.github.io/Music-player/)
+[Launch Audio Player](https://wasabully.github.io/Music-player/)
+
