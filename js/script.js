@@ -13,25 +13,25 @@ const tracks = [
 	{
 		title: 'Beautiful Day',
 		artist: 'Akon',
-		src: "/music/Akon - Akon's Beautiful Day.mp3",
-		img: '/img/img-AKON.jpeg',
+		src: '/music/AkonBeautiful-Day.mp3',
+		img: '/img/img-Akon.jpeg',
 	},
 	{
 		title: 'Love The Way You Lie',
 		artist: 'Eminem - Rihanna',
-		src: '/music/Eminem, Rihanna – Love The Way You Lie.mp3',
+		src: '/music/Love-The-Way-You-Lie.mp3',
 		img: '/img/img-LoveTheWayYouLie.jpeg',
 	},
 	{
 		title: 'Get Lucky',
 		artist: 'Daft Punk',
-		src: '/music/Daft Punk - Get Lucky.mp3',
+		src: '/music/Get-Lucky.mp3',
 		img: '/img/img-Get-Lucky.jpg',
 	},
 	{
 		title: "Gangsta's Paradise",
 		artist: 'Coolio (feat. L.V.)',
-		src: "/music/Coolio feat LV - Gangsta's Paradise.mp3",
+		src: '/music/CoolioGangsta-Paradise.mp3',
 		img: '/img/img-Paradise.jpg',
 	},
 ];
