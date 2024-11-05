@@ -79,7 +79,6 @@ body {
 }
 
 .controls button {
-	font-size: 16px;
 	color: #fff;
 	background-color: #035877;
 	border: none;
@@ -159,6 +158,8 @@ body {
 
 	.controls {
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.controls button {
