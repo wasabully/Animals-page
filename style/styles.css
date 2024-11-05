@@ -1,96 +1,111 @@
-.container {
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Playwrite GB S', cursive, sans-serif;
+	font-size: 5px;
+	min-height: 100vh;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: 90vh;
-	/* background-color: cornflowerblue; */
-	padding: 20px;
-	font-family: 'Playwrite GB S', cursive;
 }
 
-.player__album-cover {
-	margin-bottom: 20px;
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: center;
+	filter: blur(10px);
+	z-index: -1;
 }
 
-.album-cover__image {
+.container {
+	background-color: #e7e7e7;
+	height: 550px;
+	width: 400px;
+	border-radius: 20px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+	transition: all 0.5s ease;
+}
+
+.container:hover {
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.album-cover {
+	width: 300px;
+	height: 300px;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+
+.album-cover img {
+	object-fit: cover;
+	border-radius: 20px;
+	height: 100%;
 	width: 100%;
-	max-width: 300px;
-	border-radius: 10px;
+	opacity: 1;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
 }
 
-.player__track-info {
+.album-cover img:hover {
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.8);
+}
+
+.track-info {
 	text-align: center;
 	margin-bottom: 20px;
 }
 
-.track-info__title {
+.track-info h3 {
 	font-size: 1.5rem;
 	font-weight: 300;
 }
 
-.track-info__artist {
+.track-info p {
 	font-size: 1.2rem;
 	color: #555;
 }
 
-.player__progress {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-bottom: 20px;
-	width: 100%;
-	max-width: 500px;
-}
-
-.progress__time {
-	font-size: 0.9rem;
-}
-
-.progress__bar {
-	flex-grow: 1;
-}
-
-.player__controls {
+.controls {
 	display: flex;
 	justify-content: center;
 	gap: 1rem;
 	margin-bottom: 20px;
 }
 
-.controls__button {
+.controls button {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
 	transition: transform 0.2s;
 }
 
-.controls__button:hover {
+.controls button:hover {
 	transform: scale(1.1);
 }
 
-@media (max-width: 1000px) {
-	.container {
-		max-width: 100%;
-	}
+.progress {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: 25px;
 }
 
-@media (max-width: 600px) {
-	.album-cover__image {
-		max-width: 200px;
-	}
+.progress-time {
+	font-size: 0.9rem;
+}
 
-	.track-info__title {
-		font-size: 1.2rem;
-	}
-	.track-info__artist {
-		font-size: 1rem;
-	}
-
-	.player__progress {
-		max-width: 100%;
-	}
-	.controls__button {
-		gap: 0.5rem;
-	}
+.progress-bar {
+	background-color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	height: 10px;
+	width: 60%;
 }

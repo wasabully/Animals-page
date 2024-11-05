@@ -10,45 +10,34 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style/styles.css" />
-		<title>Music player</title>
+		<title>Music Player</title>
 	</head>
 	<body>
+		<div class="background" id="background"></div>
 		<main class="container">
-			<section class="player__album-cover">
-				<img
-					src="/img/img-LoveTheWayYouLie.jpeg"
-					alt="Album"
-					class="album-cover__image"
-					id="album-cover"
-				/>
+			<section class="album-cover">
+				<img id="album-cover" />
 			</section>
 
-			<section class="player__track-info">
-				<h3 id="track-title" class="track-info__title">Love The Way You Lie</h3>
-				<p id="track-artist" class="track-info__artist">Eminem - Rihanna</p>
+			<section class="track-info">
+				<h3 id="track-title"></h3>
+				<p id="track-artist"></p>
 			</section>
 
-			<section class="player__controls">
-				<button id="prev-button" class="controls__button">
-					&#9664;&#9664;
-				</button>
-				<button id="play-button" class="controls__button">&#9654;</button>
-				<button id="next-button" class="controls__button">
-					&#9654;&#9654;
-				</button>
+			<section class="controls">
+				<button id="prev-button">&#9664;&#9664;</button>
+				<button id="play-button">&#9654;</button>
+				<button id="next-button">&#9654;&#9654;</button>
 			</section>
 
-			<section class="player__progress">
-				<span class="progress__time progress__time--start">0:00</span>
-				<input type="range" class="progress__bar" min="0" max="100" value="0" />
-				<span class="progress__time progress__time--end">0:00</span>
+			<section class="progress">
+				<span class="progress-time start-time">0:00</span>
+				<input type="range" class="progress-bar" min="0" max="100" value="0" />
+				<span class="progress-time end-time">0:00</span>
 			</section>
 
-			<audio id="player" class="player__audio">
-				<source
-					src="/music/Eminem, Rihanna – Love The Way You Lie.mp3"
-					type="audio/mpeg"
-				/>
+			<audio id="player">
+				<source type="audio/mpeg" />
 			</audio>
 		</main>
 		<script src="./js/script.js"></script>
