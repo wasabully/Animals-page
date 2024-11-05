@@ -49,7 +49,15 @@ const nextTrack = () => {
 	playButton.innerHTML = '&#10074;&#10074;';
 };
 
+const prevTrack = () => {
+	currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+	loadTrack();
+	audio.play();
+	playButton.innerHTML = '&#10074;&#10074;';
+};
+
 playButton.addEventListener('click', playPauseTrack);
 nextButton.addEventListener('click', nextTrack);
+prevButton.addEventListener('click', prevTrack);
 
 loadTrack();
